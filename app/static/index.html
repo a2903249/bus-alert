@@ -31,7 +31,54 @@
       <p>已登入：<strong id="user-email"></strong>
         <button id="logout-btn" class="secondary">登出</button>
       </p>
-      <p>訂閱功能建置中...</p>
+      <h2>新增訂閱</h2>
+
+        <label>縣市
+        <select id="city">
+            <option value="Taipei">台北市</option>
+            <option value="NewTaipei">新北市</option>
+            <option value="Taoyuan">桃園市</option>
+            <option value="Taichung">台中市</option>
+            <option value="Tainan" selected>台南市</option>
+            <option value="Kaohsiung">高雄市</option>
+        </select>
+        </label>
+
+        <label>搜尋路線（輸入路線號碼，例如 105）
+        <div class="row">
+            <input id="route-q" type="text">
+            <button id="route-search-btn" type="button">搜尋</button>
+        </div>
+        </label>
+
+        <label>路線
+        <select id="route-select" disabled>
+            <option value="">請先搜尋路線</option>
+        </select>
+        </label>
+
+        <label>方向
+        <select id="direction" disabled>
+            <option value="0">去程</option>
+            <option value="1">返程</option>
+        </select>
+        </label>
+
+        <label>上車站牌
+        <select id="stop-select" disabled>
+            <option value="">請先選擇路線</option>
+        </select>
+        </label>
+
+        <label>提前幾分鐘通知（1～30）
+        <input id="notify-minutes" type="number" min="1" max="30" value="5">
+        </label>
+
+        <button id="subscribe-btn" type="button" disabled>訂閱</button>
+        <p id="sub-message" class="message"></p>
+
+        <h2>我的訂閱</h2>
+        <ul id="sub-list"></ul>
     </section>
   </main>
 

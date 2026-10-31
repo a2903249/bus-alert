@@ -45,3 +45,24 @@ button.secondary {
 .message.ok {
   color: #1e8449;
 }
+select {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  box-sizing: border-box;
+}
+.row input {
+  margin-top: 0;
+}
+#sub-list {
+  padding-left: 1.2rem;
+}
+#sub-list li {
+  margin: 0.6rem 0;
+}
+#sub-list button {
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.6rem;
+  background: #c0392b;
+}
