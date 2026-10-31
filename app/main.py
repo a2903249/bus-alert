@@ -4,7 +4,7 @@ from fastapi import FastAPI
 
 from app import models  # 這行要有，才會註冊資料表
 from app.database import Base, engine
-from app.routers import auth, subscriptions
+from app.routers import auth, bus, subscriptions
 from app.scheduler import start_scheduler, stop_scheduler
 
 import logging
@@ -23,6 +23,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Bus Alert", lifespan=lifespan)
 app.include_router(auth.router)
+app.include_router(bus.router)
 app.include_router(subscriptions.router)
 
 
