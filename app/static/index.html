@@ -4,9 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bus Alert 公車到站通知</title>
+  <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-  <h1>Bus Alert 公車到站通知</h1>
-  <p>前端建置中...</p>
+  <main>
+    <h1>Bus Alert 公車到站通知</h1>
+
+    <!-- 未登入時顯示 -->
+    <section id="auth-section">
+      <h2>登入／註冊</h2>
+      <label>Email
+        <input id="email" type="email" autocomplete="email">
+      </label>
+      <label>密碼（至少 8 字元）
+        <input id="password" type="password" autocomplete="current-password">
+      </label>
+      <div class="row">
+        <button id="login-btn">登入</button>
+        <button id="register-btn" class="secondary">註冊</button>
+      </div>
+      <p id="auth-message" class="message"></p>
+    </section>
+
+    <!-- 登入後顯示 -->
+    <section id="app-section" hidden>
+      <p>已登入：<strong id="user-email"></strong>
+        <button id="logout-btn" class="secondary">登出</button>
+      </p>
+      <p>訂閱功能建置中...</p>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
 </body>
 </html>

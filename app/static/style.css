@@ -1,0 +1,47 @@
+body {
+  font-family: system-ui, "Noto Sans TC", sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  color: #222;
+}
+main {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin: 0.8rem 0;
+}
+input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #1a73e8;
+  color: #fff;
+  cursor: pointer;
+}
+button.secondary {
+  background: #6b7280;
+}
+.message {
+  min-height: 1.2em;
+  color: #c0392b;
+}
+.message.ok {
+  color: #1e8449;
+}
